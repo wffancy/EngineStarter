@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B6E509427F09F040077D8A3 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E509127F09F040077D8A3 /* Application.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B6E509027F09CDB0077D8A3 /* Hazel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hazel.h; sourceTree = "<group>"; };
+		2B6E509127F09F040077D8A3 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		2B6E509227F09F040077D8A3 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		2B6E509327F09F040077D8A3 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		2B6E509927F149D40077D8A3 /* EntryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryPoint.h; sourceTree = "<group>"; };
+		3AB78B36341D8CA827B8E976 /* libHazel.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libHazel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EE855A680736E182F7493E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B6E509527F09F070077D8A3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2B6E509127F09F040077D8A3 /* Application.cpp */,
+				2B6E509227F09F040077D8A3 /* Application.h */,
+				2B6E509327F09F040077D8A3 /* Core.h */,
+				2B6E509927F149D40077D8A3 /* EntryPoint.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		9DD5D9D437F24E46842D9814 /* Hazel */ = {
+			isa = PBXGroup;
+			children = (
+				2B6E509527F09F070077D8A3 /* src */,
+				2B6E509027F09CDB0077D8A3 /* Hazel.h */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+			);
+			name = Hazel;
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AB78B36341D8CA827B8E976 /* libHazel.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		707FD45C87926F8E77AE6A9C /* Hazel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD239E056EAEB6771DAFDC45 /* Build configuration list for PBXNativeTarget "Hazel" */;
+			buildPhases = (
+				7ECFD646F05AEEB89F5C1486 /* Resources */,
+				E87CEF9D5A08080F09092DDD /* Sources */,
+				0EE855A680736E182F7493E6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hazel;
+			productName = Hazel;
+			productReference = 3AB78B36341D8CA827B8E976 /* libHazel.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Hazel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DD5D9D437F24E46842D9814 /* Hazel */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				707FD45C87926F8E77AE6A9C /* Hazel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ECFD646F05AEEB89F5C1486 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E87CEF9D5A08080F09092DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B6E509427F09F040077D8A3 /* Application.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		025798E3526B2D95D4E95F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HZ_PLATFORM_MAC,
+					HZ_BUILD_DLL,
+					HZ_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../bin-int/Debug-macosx-x86_64/Hazel";
+				ONLY_ACTIVE_ARCH = YES;
+				SYMROOT = "../bin/Debug-macosx-x86_64/Hazel";
+				USER_HEADER_SEARCH_PATHS = vendor/spdlog/include;
+			};
+			name = Debug;
+		};
+		461FE24BA16135BD74BB808B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../bin/Debug-macosx-x86_64/Hazel";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Hazel;
+			};
+			name = Debug;
+		};
+		6DB226388F7DD36ACC32FC78 /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../bin/Dist-macosx-x86_64/Hazel";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Hazel;
+			};
+			name = Dist;
+		};
+		9464BC05C548B3F7D860EA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../bin/Release-macosx-x86_64/Hazel";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Hazel;
+			};
+			name = Release;
+		};
+		EB0937DD8E54C10FA9258E1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HZ_PLATFORM_MAC,
+					HZ_BUILD_DLL,
+					HZ_RELEASE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../bin-int/Release-macosx-x86_64/Hazel";
+				ONLY_ACTIVE_ARCH = NO;
+				SYMROOT = "../bin/Release-macosx-x86_64/Hazel";
+				USER_HEADER_SEARCH_PATHS = vendor/spdlog/include;
+			};
+			name = Release;
+		};
+		FE57FFB03712C622C6A9FDF0 /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HZ_PLATFORM_MAC,
+					HZ_BUILD_DLL,
+					HZ_DIST,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../bin-int/Dist-macosx-x86_64/Hazel";
+				ONLY_ACTIVE_ARCH = NO;
+				SYMROOT = "../bin/Dist-macosx-x86_64/Hazel";
+				USER_HEADER_SEARCH_PATHS = vendor/spdlog/include;
+			};
+			name = Dist;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Hazel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025798E3526B2D95D4E95F23 /* Debug */,
+				EB0937DD8E54C10FA9258E1D /* Release */,
+				FE57FFB03712C622C6A9FDF0 /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD239E056EAEB6771DAFDC45 /* Build configuration list for PBXNativeTarget "Hazel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461FE24BA16135BD74BB808B /* Debug */,
+				9464BC05C548B3F7D860EA45 /* Release */,
+				6DB226388F7DD36ACC32FC78 /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
