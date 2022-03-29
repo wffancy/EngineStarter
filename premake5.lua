@@ -26,11 +26,13 @@ project "Hazel"
 
     includedirs
     {
+        "%{prj.name}/src"
         "%{prj.name}/vendor/spdlog/include"
     }
 
     filter "system:macosx"
         staticruntime "On"
+        cppdialect "C++17"
 
         defines
         {
@@ -82,6 +84,7 @@ project "Sandbox"
 
     filter "system:macosx"
         staticruntime "On"
+        cppdialect "C++17"
 
         defines
         {
