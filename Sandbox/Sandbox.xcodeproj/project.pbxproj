@@ -46,18 +46,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B6E509627F09F150077D8A3 /* src */ = {
+		2B6E509B27F1538D0077D8A3 /* src */ = {
 			isa = PBXGroup;
 			children = (
 				2B6E509727F09F1F0077D8A3 /* SandboxApp.cpp */,
 			);
-			name = src;
+			path = src;
 			sourceTree = "<group>";
 		};
 		6849586FFB54B1614389A6AF /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
-				2B6E509627F09F150077D8A3 /* src */,
+				2B6E509B27F1538D0077D8A3 /* src */,
 				A6C936B49B3FADE6EA134CF4 /* Products */,
 				9D968EAA920D05DCE0E0A4EA /* Projects */,
 			);
@@ -184,12 +184,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CONFIGURATION_BUILD_DIR = "../bin/Dist-macosx-x86_64/Sandbox";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = Sandbox;
+				SYSTEM_HEADER_SEARCH_PATHS = ../Hazel/vendor/spdlog/include;
 				USER_HEADER_SEARCH_PATHS = "../Hazel/vendor/spdlog/include ../Hazel/src ../Hazel";
 			};
 			name = Dist;
@@ -219,12 +221,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CONFIGURATION_BUILD_DIR = "../bin/Debug-macosx-x86_64/Sandbox";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = Sandbox;
+				SYSTEM_HEADER_SEARCH_PATHS = ../Hazel/vendor/spdlog/include;
 				USER_HEADER_SEARCH_PATHS = "../Hazel/vendor/spdlog/include ../Hazel/src ../Hazel";
 			};
 			name = Debug;
@@ -277,12 +281,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CONFIGURATION_BUILD_DIR = "../bin/Release-macosx-x86_64/Sandbox";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = Sandbox;
+				SYSTEM_HEADER_SEARCH_PATHS = ../Hazel/vendor/spdlog/include;
 				USER_HEADER_SEARCH_PATHS = "../Hazel/vendor/spdlog/include ../Hazel/src ../Hazel";
 			};
 			name = Release;

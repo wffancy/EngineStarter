@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2B6E509427F09F040077D8A3 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E509127F09F040077D8A3 /* Application.cpp */; };
+		2B6E509E27F15D3E0077D8A3 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E509C27F15D3E0077D8A3 /* Log.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0584FD27F2A99300C3FD1D /* KeyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyEvent.h; sourceTree = "<group>"; };
+		2B0584FE27F2B9BF00C3FD1D /* ApplicationEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationEvent.h; sourceTree = "<group>"; };
+		2B0584FF27F2BA7200C3FD1D /* MouseEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseEvent.h; sourceTree = "<group>"; };
+		2B24082B27F2961F0029247D /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		2B6E509027F09CDB0077D8A3 /* Hazel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hazel.h; sourceTree = "<group>"; };
 		2B6E509127F09F040077D8A3 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		2B6E509227F09F040077D8A3 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
 		2B6E509327F09F040077D8A3 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		2B6E509927F149D40077D8A3 /* EntryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryPoint.h; sourceTree = "<group>"; };
+		2B6E509C27F15D3E0077D8A3 /* Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		2B6E509D27F15D3E0077D8A3 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		3AB78B36341D8CA827B8E976 /* libHazel.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libHazel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -30,21 +37,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B6E509527F09F070077D8A3 /* src */ = {
+		2B24082C27F29DCB0029247D /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				2B24082B27F2961F0029247D /* Event.h */,
+				2B0584FD27F2A99300C3FD1D /* KeyEvent.h */,
+				2B0584FE27F2B9BF00C3FD1D /* ApplicationEvent.h */,
+				2B0584FF27F2BA7200C3FD1D /* MouseEvent.h */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		2B6E509A27F1537D0077D8A3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2B24082C27F29DCB0029247D /* Events */,
 				2B6E509127F09F040077D8A3 /* Application.cpp */,
 				2B6E509227F09F040077D8A3 /* Application.h */,
 				2B6E509327F09F040077D8A3 /* Core.h */,
 				2B6E509927F149D40077D8A3 /* EntryPoint.h */,
+				2B6E509C27F15D3E0077D8A3 /* Log.cpp */,
+				2B6E509D27F15D3E0077D8A3 /* Log.h */,
 			);
-			name = src;
+			path = src;
 			sourceTree = "<group>";
 		};
 		9DD5D9D437F24E46842D9814 /* Hazel */ = {
 			isa = PBXGroup;
 			children = (
-				2B6E509527F09F070077D8A3 /* src */,
+				2B6E509A27F1537D0077D8A3 /* src */,
 				2B6E509027F09CDB0077D8A3 /* Hazel.h */,
 				A6C936B49B3FADE6EA134CF4 /* Products */,
 			);
@@ -118,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6E509E27F15D3E0077D8A3 /* Log.cpp in Sources */,
 				2B6E509427F09F040077D8A3 /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,12 +175,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CONFIGURATION_BUILD_DIR = "../bin/Debug-macosx-x86_64/Hazel";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXECUTABLE_PREFIX = lib;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /usr/local/lib;
+				NEW_SETTING = "";
 				PRODUCT_NAME = Hazel;
+				SYSTEM_HEADER_SEARCH_PATHS = vendor/spdlog/include;
 			};
 			name = Debug;
 		};
@@ -166,12 +191,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CONFIGURATION_BUILD_DIR = "../bin/Dist-macosx-x86_64/Hazel";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXECUTABLE_PREFIX = lib;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /usr/local/lib;
+				NEW_SETTING = "";
 				PRODUCT_NAME = Hazel;
+				SYSTEM_HEADER_SEARCH_PATHS = vendor/spdlog/include;
 			};
 			name = Dist;
 		};
@@ -179,12 +207,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CONFIGURATION_BUILD_DIR = "../bin/Release-macosx-x86_64/Hazel";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXECUTABLE_PREFIX = lib;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /usr/local/lib;
+				NEW_SETTING = "";
 				PRODUCT_NAME = Hazel;
+				SYSTEM_HEADER_SEARCH_PATHS = vendor/spdlog/include;
 			};
 			name = Release;
 		};
