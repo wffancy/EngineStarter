@@ -7,23 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B6E509427F09F040077D8A3 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E509127F09F040077D8A3 /* Application.cpp */; };
-		2B6E509E27F15D3E0077D8A3 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E509C27F15D3E0077D8A3 /* Log.cpp */; };
+		09D7FE5D3969CD4F14770C9D /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49927925EC809FD77BA67F65 /* Log.cpp */; };
+		EB8E4E4142F3C133F501DC81 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFB668C921AFB37B9B8EEF09 /* Application.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B0584FD27F2A99300C3FD1D /* KeyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyEvent.h; sourceTree = "<group>"; };
-		2B0584FE27F2B9BF00C3FD1D /* ApplicationEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationEvent.h; sourceTree = "<group>"; };
-		2B0584FF27F2BA7200C3FD1D /* MouseEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseEvent.h; sourceTree = "<group>"; };
-		2B24082B27F2961F0029247D /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		2B6E509027F09CDB0077D8A3 /* Hazel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hazel.h; sourceTree = "<group>"; };
-		2B6E509127F09F040077D8A3 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
-		2B6E509227F09F040077D8A3 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
-		2B6E509327F09F040077D8A3 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
-		2B6E509927F149D40077D8A3 /* EntryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryPoint.h; sourceTree = "<group>"; };
-		2B6E509C27F15D3E0077D8A3 /* Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
-		2B6E509D27F15D3E0077D8A3 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
-		3AB78B36341D8CA827B8E976 /* libHazel.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libHazel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C0B9B3C62C7B6504D01FF3 /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Application.h; path = src/Application.h; sourceTree = "<group>"; };
+		05949433CC228BA53A24B273 /* argv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = argv.h; path = vendor/spdlog/include/spdlog/cfg/argv.h; sourceTree = "<group>"; };
+		0B1FBCB96520D3AB2C67CAF9 /* helpers-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "helpers-inl.h"; path = "vendor/spdlog/include/spdlog/cfg/helpers-inl.h"; sourceTree = "<group>"; };
+		0B7DFD34D20BF4A6400E1B74 /* logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = logger.h; path = vendor/spdlog/include/spdlog/logger.h; sourceTree = "<group>"; };
+		1389A32D0788EC9F8C74016D /* os-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "os-inl.h"; path = "vendor/spdlog/include/spdlog/details/os-inl.h"; sourceTree = "<group>"; };
+		1417D9D6B60175C8AD288816 /* xchar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xchar.h; path = vendor/spdlog/include/spdlog/fmt/xchar.h; sourceTree = "<group>"; };
+		144597F7ACBD8569D8A47637 /* daily_file_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = daily_file_sink.h; path = vendor/spdlog/include/spdlog/sinks/daily_file_sink.h; sourceTree = "<group>"; };
+		17A1D1DC8BFC16CE09DFA01C /* formatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = formatter.h; path = vendor/spdlog/include/spdlog/formatter.h; sourceTree = "<group>"; };
+		18C56049754C64BBFDEF1E89 /* format-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "format-inl.h"; path = "vendor/spdlog/include/spdlog/fmt/bundled/format-inl.h"; sourceTree = "<group>"; };
+		20F858CE2D830B40A867D70E /* async_logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = async_logger.h; path = vendor/spdlog/include/spdlog/async_logger.h; sourceTree = "<group>"; };
+		2241EB7D25B2BDAFA71F61BD /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Core.h; path = src/Core.h; sourceTree = "<group>"; };
+		23CF3EB70271DA29B753DCF7 /* udp_client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = udp_client.h; path = vendor/spdlog/include/spdlog/details/udp_client.h; sourceTree = "<group>"; };
+		252BC3A931B6761BAC9B41E9 /* format.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = format.h; path = vendor/spdlog/include/spdlog/fmt/bundled/format.h; sourceTree = "<group>"; };
+		25723C40C75BD832BE82EA80 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = vendor/spdlog/include/spdlog/version.h; sourceTree = "<group>"; };
+		25723E3B31FCF0ADACE1BC7B /* dist_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dist_sink.h; path = vendor/spdlog/include/spdlog/sinks/dist_sink.h; sourceTree = "<group>"; };
+		2A35B8391B2D262B8730A679 /* log_msg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = log_msg.h; path = vendor/spdlog/include/spdlog/details/log_msg.h; sourceTree = "<group>"; };
+		2C3BEAF51D3358E78936D935 /* sink-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "sink-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/sink-inl.h"; sourceTree = "<group>"; };
+		2CC29F05842811F736362D45 /* env.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = env.h; path = vendor/spdlog/include/spdlog/cfg/env.h; sourceTree = "<group>"; };
+		2DE5F2E921E53C5BA6D05129 /* core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = core.h; path = vendor/spdlog/include/spdlog/fmt/bundled/core.h; sourceTree = "<group>"; };
+		2F7539DCD3C7D78EE600201C /* Hazel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Hazel.h; path = Hazel.h; sourceTree = "<group>"; };
+		32F0403BD4D9DC2DCC00EE7B /* ApplicationEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ApplicationEvent.h; path = src/Events/ApplicationEvent.h; sourceTree = "<group>"; };
+		371E96F3911FADE55866A533 /* mongo_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mongo_sink.h; path = vendor/spdlog/include/spdlog/sinks/mongo_sink.h; sourceTree = "<group>"; };
+		39EE880D93EF9EFF5B36964D /* ostream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ostream.h; path = vendor/spdlog/include/spdlog/fmt/bundled/ostream.h; sourceTree = "<group>"; };
+		3AB78B36341D8CA827B8E976 /* libHazel.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libHazel.dylib; path = libHazel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		411C158952D3557BC84143C9 /* ostream_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ostream_sink.h; path = vendor/spdlog/include/spdlog/sinks/ostream_sink.h; sourceTree = "<group>"; };
+		4189822EB5E3C72033C7506E /* stopwatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stopwatch.h; path = vendor/spdlog/include/spdlog/stopwatch.h; sourceTree = "<group>"; };
+		42005F15DA784C87065F3D55 /* basic_file_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = basic_file_sink.h; path = vendor/spdlog/include/spdlog/sinks/basic_file_sink.h; sourceTree = "<group>"; };
+		4333118B76B250FD8EAC2FCB /* log_msg_buffer-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "log_msg_buffer-inl.h"; path = "vendor/spdlog/include/spdlog/details/log_msg_buffer-inl.h"; sourceTree = "<group>"; };
+		4612E41524B57F87D9978255 /* syslog_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = syslog_sink.h; path = vendor/spdlog/include/spdlog/sinks/syslog_sink.h; sourceTree = "<group>"; };
+		47388D660DC684D87BC8ABA6 /* spdlog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = spdlog.h; path = vendor/spdlog/include/spdlog/spdlog.h; sourceTree = "<group>"; };
+		49927925EC809FD77BA67F65 /* Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Log.cpp; path = src/Log.cpp; sourceTree = "<group>"; };
+		4D75D06114DA8B539F925EA1 /* rotating_file_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rotating_file_sink.h; path = vendor/spdlog/include/spdlog/sinks/rotating_file_sink.h; sourceTree = "<group>"; };
+		4DAF496A106FA9DC6DA487AA /* ranges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ranges.h; path = vendor/spdlog/include/spdlog/fmt/ranges.h; sourceTree = "<group>"; };
+		5149DDEEADD0E26036739C2E /* async_logger-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "async_logger-inl.h"; path = "vendor/spdlog/include/spdlog/async_logger-inl.h"; sourceTree = "<group>"; };
+		52618E775EEC40E9D9D10CB7 /* ranges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ranges.h; path = vendor/spdlog/include/spdlog/fmt/bundled/ranges.h; sourceTree = "<group>"; };
+		55811696EFDAFF882C1364D6 /* pattern_formatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pattern_formatter.h; path = vendor/spdlog/include/spdlog/pattern_formatter.h; sourceTree = "<group>"; };
+		570F695568C6A947DE349795 /* android_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = android_sink.h; path = vendor/spdlog/include/spdlog/sinks/android_sink.h; sourceTree = "<group>"; };
+		574238F0AEA7ABE260B5C730 /* async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = async.h; path = vendor/spdlog/include/spdlog/async.h; sourceTree = "<group>"; };
+		57AD7EF9EDD690EBAF3CED39 /* periodic_worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = periodic_worker.h; path = vendor/spdlog/include/spdlog/details/periodic_worker.h; sourceTree = "<group>"; };
+		5940E0276AF82019E0660E67 /* file_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = file_helper.h; path = vendor/spdlog/include/spdlog/details/file_helper.h; sourceTree = "<group>"; };
+		637970F7F9A282E9BB08DF37 /* hourly_file_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hourly_file_sink.h; path = vendor/spdlog/include/spdlog/sinks/hourly_file_sink.h; sourceTree = "<group>"; };
+		65A865FFFBD177F1BD37D43F /* stdout_sinks-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdout_sinks-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/stdout_sinks-inl.h"; sourceTree = "<group>"; };
+		678F5A672EF41559B9ABE8A7 /* ansicolor_sink-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ansicolor_sink-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/ansicolor_sink-inl.h"; sourceTree = "<group>"; };
+		685572E79BD4B259B3CE9127 /* udp_client-windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "udp_client-windows.h"; path = "vendor/spdlog/include/spdlog/details/udp_client-windows.h"; sourceTree = "<group>"; };
+		6F2F72D4632EBC46E819D114 /* logger-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "logger-inl.h"; path = "vendor/spdlog/include/spdlog/logger-inl.h"; sourceTree = "<group>"; };
+		756BDBAD85B8BF9F83A589ED /* synchronous_factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = synchronous_factory.h; path = vendor/spdlog/include/spdlog/details/synchronous_factory.h; sourceTree = "<group>"; };
+		78E26157856D13C90051DF97 /* locale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = locale.h; path = vendor/spdlog/include/spdlog/fmt/bundled/locale.h; sourceTree = "<group>"; };
+		7A20E50986AB977B01906349 /* null_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = null_sink.h; path = vendor/spdlog/include/spdlog/sinks/null_sink.h; sourceTree = "<group>"; };
+		7A4D05D5107617C7D1DC7415 /* console_globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = console_globals.h; path = vendor/spdlog/include/spdlog/details/console_globals.h; sourceTree = "<group>"; };
+		7A52D3B16E521D23F33D31F1 /* args.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = args.h; path = vendor/spdlog/include/spdlog/fmt/bundled/args.h; sourceTree = "<group>"; };
+		80735565716AC357DD6E43A5 /* udp_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = udp_sink.h; path = vendor/spdlog/include/spdlog/sinks/udp_sink.h; sourceTree = "<group>"; };
+		8385FE01F6A78AF3576CCC41 /* rotating_file_sink-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "rotating_file_sink-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/rotating_file_sink-inl.h"; sourceTree = "<group>"; };
+		83D19BB64B3656A8D5EE29F6 /* pattern_formatter-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pattern_formatter-inl.h"; path = "vendor/spdlog/include/spdlog/pattern_formatter-inl.h"; sourceTree = "<group>"; };
+		86565AFB4916BB6DA64B993B /* os.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = os.h; path = vendor/spdlog/include/spdlog/fmt/bundled/os.h; sourceTree = "<group>"; };
+		87AC38B3664ED4251B30D6F3 /* circular_q.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = circular_q.h; path = vendor/spdlog/include/spdlog/details/circular_q.h; sourceTree = "<group>"; };
+		8A1309E37B0A77D5E70DF823 /* qt_sinks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = qt_sinks.h; path = vendor/spdlog/include/spdlog/sinks/qt_sinks.h; sourceTree = "<group>"; };
+		8C0A5705223368F7E399C545 /* windows_include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = windows_include.h; path = vendor/spdlog/include/spdlog/details/windows_include.h; sourceTree = "<group>"; };
+		8CCF05B551845C2705F303F5 /* win_eventlog_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = win_eventlog_sink.h; path = vendor/spdlog/include/spdlog/sinks/win_eventlog_sink.h; sourceTree = "<group>"; };
+		8D3B622B2364741DE4CAD06B /* thread_pool-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "thread_pool-inl.h"; path = "vendor/spdlog/include/spdlog/details/thread_pool-inl.h"; sourceTree = "<group>"; };
+		8D6674761FF43E6888CCE2B6 /* fwd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = vendor/spdlog/include/spdlog/fwd.h; sourceTree = "<group>"; };
+		90A421E5A25B61D717C95025 /* systemd_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = systemd_sink.h; path = vendor/spdlog/include/spdlog/sinks/systemd_sink.h; sourceTree = "<group>"; };
+		931370C7293C82B9EAA2DF07 /* file_helper-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "file_helper-inl.h"; path = "vendor/spdlog/include/spdlog/details/file_helper-inl.h"; sourceTree = "<group>"; };
+		97010659A8B8464B1E263499 /* log_msg-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "log_msg-inl.h"; path = "vendor/spdlog/include/spdlog/details/log_msg-inl.h"; sourceTree = "<group>"; };
+		99B8986D785B33DF2D3D36AD /* backtracer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = backtracer.h; path = vendor/spdlog/include/spdlog/details/backtracer.h; sourceTree = "<group>"; };
+		9AA9C57BF730C9ED7FD383BB /* registry-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "registry-inl.h"; path = "vendor/spdlog/include/spdlog/details/registry-inl.h"; sourceTree = "<group>"; };
+		9AFD6D19AB4A510BA9371B59 /* periodic_worker-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "periodic_worker-inl.h"; path = "vendor/spdlog/include/spdlog/details/periodic_worker-inl.h"; sourceTree = "<group>"; };
+		9E8D5389AB1805FB25FCD1C9 /* base_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = base_sink.h; path = vendor/spdlog/include/spdlog/sinks/base_sink.h; sourceTree = "<group>"; };
+		A219D25544036E473B2A8095 /* sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sink.h; path = vendor/spdlog/include/spdlog/sinks/sink.h; sourceTree = "<group>"; };
+		A230DEE193284CD3FF2BCD21 /* tcp_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tcp_sink.h; path = vendor/spdlog/include/spdlog/sinks/tcp_sink.h; sourceTree = "<group>"; };
+		A91F3EC69D1E883822099D06 /* common-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "common-inl.h"; path = "vendor/spdlog/include/spdlog/common-inl.h"; sourceTree = "<group>"; };
+		AC12D46F448AC1E17071B2AF /* dup_filter_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dup_filter_sink.h; path = vendor/spdlog/include/spdlog/sinks/dup_filter_sink.h; sourceTree = "<group>"; };
+		B11E78FC2578BDEEA35C473C /* compile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = compile.h; path = vendor/spdlog/include/spdlog/fmt/compile.h; sourceTree = "<group>"; };
+		B13AC5BB245C52AD852193FB /* stdout_color_sinks-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdout_color_sinks-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h"; sourceTree = "<group>"; };
+		B3A9F5291030F99B98D3B369 /* base_sink-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "base_sink-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/base_sink-inl.h"; sourceTree = "<group>"; };
+		B7367886AB35C1F83020D6C6 /* spdlog-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "spdlog-inl.h"; path = "vendor/spdlog/include/spdlog/spdlog-inl.h"; sourceTree = "<group>"; };
+		B786CCAD140DD11F9CB08AED /* wincolor_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wincolor_sink.h; path = vendor/spdlog/include/spdlog/sinks/wincolor_sink.h; sourceTree = "<group>"; };
+		B819B8A9121ACF9BD961C6E9 /* compile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = compile.h; path = vendor/spdlog/include/spdlog/fmt/bundled/compile.h; sourceTree = "<group>"; };
+		BAC585B31152F025E9CC03F3 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Event.h; path = src/Events/Event.h; sourceTree = "<group>"; };
+		BDD2DB3353FBED2515624973 /* mpmc_blocking_q.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mpmc_blocking_q.h; path = vendor/spdlog/include/spdlog/details/mpmc_blocking_q.h; sourceTree = "<group>"; };
+		C0D792FDCD62456F4847113D /* printf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = printf.h; path = vendor/spdlog/include/spdlog/fmt/bundled/printf.h; sourceTree = "<group>"; };
+		C2FE028F6750A0417988E8CF /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Log.h; path = src/Log.h; sourceTree = "<group>"; };
+		C678EBC5F75CE3B70A751A05 /* KeyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KeyEvent.h; path = src/Events/KeyEvent.h; sourceTree = "<group>"; };
+		C90B70A3EAD71DD5278C46E3 /* EntryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EntryPoint.h; path = src/EntryPoint.h; sourceTree = "<group>"; };
+		CC06A3A692949B180096C1E6 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = common.h; path = vendor/spdlog/include/spdlog/common.h; sourceTree = "<group>"; };
+		CC36A3906E203F82654751D0 /* tweakme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tweakme.h; path = vendor/spdlog/include/spdlog/tweakme.h; sourceTree = "<group>"; };
+		D303AD4E77564B00898E938E /* hzpch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hzpch.h; path = hzpch.h; sourceTree = "<group>"; };
+		D3ACC743C4A4353530A7B583 /* xchar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xchar.h; path = vendor/spdlog/include/spdlog/fmt/bundled/xchar.h; sourceTree = "<group>"; };
+		D3B9591948139E0BC5F72759 /* helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = helpers.h; path = vendor/spdlog/include/spdlog/cfg/helpers.h; sourceTree = "<group>"; };
+		D45CD8E76CD4C65998BBB727 /* ringbuffer_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ringbuffer_sink.h; path = vendor/spdlog/include/spdlog/sinks/ringbuffer_sink.h; sourceTree = "<group>"; };
+		D53FE8FA9BCDE06C09D0073A /* ostr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ostr.h; path = vendor/spdlog/include/spdlog/fmt/ostr.h; sourceTree = "<group>"; };
+		D59FE8476FF9D139AC323687 /* ansicolor_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ansicolor_sink.h; path = vendor/spdlog/include/spdlog/sinks/ansicolor_sink.h; sourceTree = "<group>"; };
+		D62C246309AB63D521A542A3 /* tcp_client-windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "tcp_client-windows.h"; path = "vendor/spdlog/include/spdlog/details/tcp_client-windows.h"; sourceTree = "<group>"; };
+		D70DDA48E3988CBA5E7D5888 /* bin_to_hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bin_to_hex.h; path = vendor/spdlog/include/spdlog/fmt/bin_to_hex.h; sourceTree = "<group>"; };
+		D711168BE8C8567D5E3644CB /* thread_pool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = thread_pool.h; path = vendor/spdlog/include/spdlog/details/thread_pool.h; sourceTree = "<group>"; };
+		D718634D0911ADFF82F0E98D /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = utils.h; path = vendor/spdlog/tests/utils.h; sourceTree = "<group>"; };
+		DBA7B5B50F26F5272720D3F5 /* basic_file_sink-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "basic_file_sink-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/basic_file_sink-inl.h"; sourceTree = "<group>"; };
+		DDAACFEB7622BD5DA209AE2B /* log_msg_buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = log_msg_buffer.h; path = vendor/spdlog/include/spdlog/details/log_msg_buffer.h; sourceTree = "<group>"; };
+		DE7FC71CA140278EFE75055C /* chrono.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = chrono.h; path = vendor/spdlog/include/spdlog/fmt/chrono.h; sourceTree = "<group>"; };
+		DFFDFCC3BEA0983573829B03 /* null_mutex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = null_mutex.h; path = vendor/spdlog/include/spdlog/details/null_mutex.h; sourceTree = "<group>"; };
+		E089F633BF2C91A5740E9473 /* tcp_client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tcp_client.h; path = vendor/spdlog/include/spdlog/details/tcp_client.h; sourceTree = "<group>"; };
+		E10665DFF2BDA5D1682B941F /* stdout_sinks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stdout_sinks.h; path = vendor/spdlog/include/spdlog/sinks/stdout_sinks.h; sourceTree = "<group>"; };
+		E1A55B4552C7FC37088EA985 /* MouseEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MouseEvent.h; path = src/Events/MouseEvent.h; sourceTree = "<group>"; };
+		E414214DA8C977BF5D381F8D /* wincolor_sink-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "wincolor_sink-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/wincolor_sink-inl.h"; sourceTree = "<group>"; };
+		E91C183840818B2AF28FA678 /* fmt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fmt.h; path = vendor/spdlog/include/spdlog/fmt/fmt.h; sourceTree = "<group>"; };
+		EAA6DB33FCD0B7E530C1A173 /* test_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = test_sink.h; path = vendor/spdlog/tests/test_sink.h; sourceTree = "<group>"; };
+		EB5D038D83D4F0FFAFBBE1CD /* backtracer-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "backtracer-inl.h"; path = "vendor/spdlog/include/spdlog/details/backtracer-inl.h"; sourceTree = "<group>"; };
+		EB93900DB221877F2023AE4D /* os.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = os.h; path = vendor/spdlog/include/spdlog/details/os.h; sourceTree = "<group>"; };
+		ED292BDBF9B3DE4D7498AA1B /* registry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = registry.h; path = vendor/spdlog/include/spdlog/details/registry.h; sourceTree = "<group>"; };
+		EFB668C921AFB37B9B8EEF09 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Application.cpp; path = src/Application.cpp; sourceTree = "<group>"; };
+		F164A3C5FDEF563778D42205 /* msvc_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = msvc_sink.h; path = vendor/spdlog/include/spdlog/sinks/msvc_sink.h; sourceTree = "<group>"; };
+		F22CE8D5E32456C74F27D715 /* color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = color.h; path = vendor/spdlog/include/spdlog/fmt/bundled/color.h; sourceTree = "<group>"; };
+		FA6BC459DEB2CC8B629FFA99 /* includes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = includes.h; path = vendor/spdlog/tests/includes.h; sourceTree = "<group>"; };
+		FB081E3A2D0168ECA6E0A47A /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = utils.h; path = vendor/spdlog/bench/utils.h; sourceTree = "<group>"; };
+		FB0C25290796D79B827BA369 /* chrono.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = chrono.h; path = vendor/spdlog/include/spdlog/fmt/bundled/chrono.h; sourceTree = "<group>"; };
+		FCE78C9BC44C478D4F041ADB /* stdout_color_sinks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stdout_color_sinks.h; path = vendor/spdlog/include/spdlog/sinks/stdout_color_sinks.h; sourceTree = "<group>"; };
+		FD7EFA95DC219607910398D5 /* fmt_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fmt_helper.h; path = vendor/spdlog/include/spdlog/details/fmt_helper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,36 +141,182 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B24082C27F29DCB0029247D /* Events */ = {
+		1DF602E4C1418C16DC125924 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-				2B24082B27F2961F0029247D /* Event.h */,
-				2B0584FD27F2A99300C3FD1D /* KeyEvent.h */,
-				2B0584FE27F2B9BF00C3FD1D /* ApplicationEvent.h */,
-				2B0584FF27F2BA7200C3FD1D /* MouseEvent.h */,
+				3F26F4573FD9F149B3BBC297 /* spdlog */,
 			);
-			path = Events;
+			name = vendor;
 			sourceTree = "<group>";
 		};
-		2B6E509A27F1537D0077D8A3 /* src */ = {
+		26BA3FBAC8A3DBACBFCAEDFA /* bundled */ = {
 			isa = PBXGroup;
 			children = (
-				2B24082C27F29DCB0029247D /* Events */,
-				2B6E509127F09F040077D8A3 /* Application.cpp */,
-				2B6E509227F09F040077D8A3 /* Application.h */,
-				2B6E509327F09F040077D8A3 /* Core.h */,
-				2B6E509927F149D40077D8A3 /* EntryPoint.h */,
-				2B6E509C27F15D3E0077D8A3 /* Log.cpp */,
-				2B6E509D27F15D3E0077D8A3 /* Log.h */,
+				7A52D3B16E521D23F33D31F1 /* args.h */,
+				FB0C25290796D79B827BA369 /* chrono.h */,
+				F22CE8D5E32456C74F27D715 /* color.h */,
+				B819B8A9121ACF9BD961C6E9 /* compile.h */,
+				2DE5F2E921E53C5BA6D05129 /* core.h */,
+				18C56049754C64BBFDEF1E89 /* format-inl.h */,
+				252BC3A931B6761BAC9B41E9 /* format.h */,
+				78E26157856D13C90051DF97 /* locale.h */,
+				86565AFB4916BB6DA64B993B /* os.h */,
+				39EE880D93EF9EFF5B36964D /* ostream.h */,
+				C0D792FDCD62456F4847113D /* printf.h */,
+				52618E775EEC40E9D9D10CB7 /* ranges.h */,
+				D3ACC743C4A4353530A7B583 /* xchar.h */,
 			);
-			path = src;
+			name = bundled;
+			sourceTree = "<group>";
+		};
+		3C930198CF20CB8A37F96FD8 /* sinks */ = {
+			isa = PBXGroup;
+			children = (
+				570F695568C6A947DE349795 /* android_sink.h */,
+				678F5A672EF41559B9ABE8A7 /* ansicolor_sink-inl.h */,
+				D59FE8476FF9D139AC323687 /* ansicolor_sink.h */,
+				B3A9F5291030F99B98D3B369 /* base_sink-inl.h */,
+				9E8D5389AB1805FB25FCD1C9 /* base_sink.h */,
+				DBA7B5B50F26F5272720D3F5 /* basic_file_sink-inl.h */,
+				42005F15DA784C87065F3D55 /* basic_file_sink.h */,
+				144597F7ACBD8569D8A47637 /* daily_file_sink.h */,
+				25723E3B31FCF0ADACE1BC7B /* dist_sink.h */,
+				AC12D46F448AC1E17071B2AF /* dup_filter_sink.h */,
+				637970F7F9A282E9BB08DF37 /* hourly_file_sink.h */,
+				371E96F3911FADE55866A533 /* mongo_sink.h */,
+				F164A3C5FDEF563778D42205 /* msvc_sink.h */,
+				7A20E50986AB977B01906349 /* null_sink.h */,
+				411C158952D3557BC84143C9 /* ostream_sink.h */,
+				8A1309E37B0A77D5E70DF823 /* qt_sinks.h */,
+				D45CD8E76CD4C65998BBB727 /* ringbuffer_sink.h */,
+				8385FE01F6A78AF3576CCC41 /* rotating_file_sink-inl.h */,
+				4D75D06114DA8B539F925EA1 /* rotating_file_sink.h */,
+				2C3BEAF51D3358E78936D935 /* sink-inl.h */,
+				A219D25544036E473B2A8095 /* sink.h */,
+				B13AC5BB245C52AD852193FB /* stdout_color_sinks-inl.h */,
+				FCE78C9BC44C478D4F041ADB /* stdout_color_sinks.h */,
+				65A865FFFBD177F1BD37D43F /* stdout_sinks-inl.h */,
+				E10665DFF2BDA5D1682B941F /* stdout_sinks.h */,
+				4612E41524B57F87D9978255 /* syslog_sink.h */,
+				90A421E5A25B61D717C95025 /* systemd_sink.h */,
+				A230DEE193284CD3FF2BCD21 /* tcp_sink.h */,
+				80735565716AC357DD6E43A5 /* udp_sink.h */,
+				8CCF05B551845C2705F303F5 /* win_eventlog_sink.h */,
+				E414214DA8C977BF5D381F8D /* wincolor_sink-inl.h */,
+				B786CCAD140DD11F9CB08AED /* wincolor_sink.h */,
+			);
+			name = sinks;
+			sourceTree = "<group>";
+		};
+		3D5AFE6940CBD09BC23874A9 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				32F0403BD4D9DC2DCC00EE7B /* ApplicationEvent.h */,
+				BAC585B31152F025E9CC03F3 /* Event.h */,
+				C678EBC5F75CE3B70A751A05 /* KeyEvent.h */,
+				E1A55B4552C7FC37088EA985 /* MouseEvent.h */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		3F26F4573FD9F149B3BBC297 /* spdlog */ = {
+			isa = PBXGroup;
+			children = (
+				79E05FFDC251442F06F0163D /* bench */,
+				F5E57E8517B12BB7546654C5 /* include */,
+				4929B6C3919A9AF5D6396D03 /* tests */,
+			);
+			name = spdlog;
+			sourceTree = "<group>";
+		};
+		4929B6C3919A9AF5D6396D03 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA6BC459DEB2CC8B629FFA99 /* includes.h */,
+				EAA6DB33FCD0B7E530C1A173 /* test_sink.h */,
+				D718634D0911ADFF82F0E98D /* utils.h */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
+		5775D4184366DFCA959E7A58 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EFB668C921AFB37B9B8EEF09 /* Application.cpp */,
+				02C0B9B3C62C7B6504D01FF3 /* Application.h */,
+				2241EB7D25B2BDAFA71F61BD /* Core.h */,
+				C90B70A3EAD71DD5278C46E3 /* EntryPoint.h */,
+				3D5AFE6940CBD09BC23874A9 /* Events */,
+				49927925EC809FD77BA67F65 /* Log.cpp */,
+				C2FE028F6750A0417988E8CF /* Log.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		67391516D85BB6088E226356 /* fmt */ = {
+			isa = PBXGroup;
+			children = (
+				D70DDA48E3988CBA5E7D5888 /* bin_to_hex.h */,
+				26BA3FBAC8A3DBACBFCAEDFA /* bundled */,
+				DE7FC71CA140278EFE75055C /* chrono.h */,
+				B11E78FC2578BDEEA35C473C /* compile.h */,
+				E91C183840818B2AF28FA678 /* fmt.h */,
+				D53FE8FA9BCDE06C09D0073A /* ostr.h */,
+				4DAF496A106FA9DC6DA487AA /* ranges.h */,
+				1417D9D6B60175C8AD288816 /* xchar.h */,
+			);
+			name = fmt;
+			sourceTree = "<group>";
+		};
+		68FD6C14C062DF067270FA54 /* details */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D038D83D4F0FFAFBBE1CD /* backtracer-inl.h */,
+				99B8986D785B33DF2D3D36AD /* backtracer.h */,
+				87AC38B3664ED4251B30D6F3 /* circular_q.h */,
+				7A4D05D5107617C7D1DC7415 /* console_globals.h */,
+				931370C7293C82B9EAA2DF07 /* file_helper-inl.h */,
+				5940E0276AF82019E0660E67 /* file_helper.h */,
+				FD7EFA95DC219607910398D5 /* fmt_helper.h */,
+				97010659A8B8464B1E263499 /* log_msg-inl.h */,
+				2A35B8391B2D262B8730A679 /* log_msg.h */,
+				4333118B76B250FD8EAC2FCB /* log_msg_buffer-inl.h */,
+				DDAACFEB7622BD5DA209AE2B /* log_msg_buffer.h */,
+				BDD2DB3353FBED2515624973 /* mpmc_blocking_q.h */,
+				DFFDFCC3BEA0983573829B03 /* null_mutex.h */,
+				1389A32D0788EC9F8C74016D /* os-inl.h */,
+				EB93900DB221877F2023AE4D /* os.h */,
+				9AFD6D19AB4A510BA9371B59 /* periodic_worker-inl.h */,
+				57AD7EF9EDD690EBAF3CED39 /* periodic_worker.h */,
+				9AA9C57BF730C9ED7FD383BB /* registry-inl.h */,
+				ED292BDBF9B3DE4D7498AA1B /* registry.h */,
+				756BDBAD85B8BF9F83A589ED /* synchronous_factory.h */,
+				D62C246309AB63D521A542A3 /* tcp_client-windows.h */,
+				E089F633BF2C91A5740E9473 /* tcp_client.h */,
+				8D3B622B2364741DE4CAD06B /* thread_pool-inl.h */,
+				D711168BE8C8567D5E3644CB /* thread_pool.h */,
+				685572E79BD4B259B3CE9127 /* udp_client-windows.h */,
+				23CF3EB70271DA29B753DCF7 /* udp_client.h */,
+				8C0A5705223368F7E399C545 /* windows_include.h */,
+			);
+			name = details;
+			sourceTree = "<group>";
+		};
+		79E05FFDC251442F06F0163D /* bench */ = {
+			isa = PBXGroup;
+			children = (
+				FB081E3A2D0168ECA6E0A47A /* utils.h */,
+			);
+			name = bench;
 			sourceTree = "<group>";
 		};
 		9DD5D9D437F24E46842D9814 /* Hazel */ = {
 			isa = PBXGroup;
 			children = (
-				2B6E509A27F1537D0077D8A3 /* src */,
-				2B6E509027F09CDB0077D8A3 /* Hazel.h */,
+				2F7539DCD3C7D78EE600201C /* Hazel.h */,
+				D303AD4E77564B00898E938E /* hzpch.h */,
+				5775D4184366DFCA959E7A58 /* src */,
+				1DF602E4C1418C16DC125924 /* vendor */,
 				A6C936B49B3FADE6EA134CF4 /* Products */,
 			);
 			name = Hazel;
@@ -78,6 +328,52 @@
 				3AB78B36341D8CA827B8E976 /* libHazel.dylib */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D72C1328484EB41AFE156168 /* cfg */ = {
+			isa = PBXGroup;
+			children = (
+				05949433CC228BA53A24B273 /* argv.h */,
+				2CC29F05842811F736362D45 /* env.h */,
+				0B1FBCB96520D3AB2C67CAF9 /* helpers-inl.h */,
+				D3B9591948139E0BC5F72759 /* helpers.h */,
+			);
+			name = cfg;
+			sourceTree = "<group>";
+		};
+		EA674E421C6098F4963FD482 /* spdlog */ = {
+			isa = PBXGroup;
+			children = (
+				574238F0AEA7ABE260B5C730 /* async.h */,
+				5149DDEEADD0E26036739C2E /* async_logger-inl.h */,
+				20F858CE2D830B40A867D70E /* async_logger.h */,
+				D72C1328484EB41AFE156168 /* cfg */,
+				A91F3EC69D1E883822099D06 /* common-inl.h */,
+				CC06A3A692949B180096C1E6 /* common.h */,
+				68FD6C14C062DF067270FA54 /* details */,
+				67391516D85BB6088E226356 /* fmt */,
+				17A1D1DC8BFC16CE09DFA01C /* formatter.h */,
+				8D6674761FF43E6888CCE2B6 /* fwd.h */,
+				6F2F72D4632EBC46E819D114 /* logger-inl.h */,
+				0B7DFD34D20BF4A6400E1B74 /* logger.h */,
+				83D19BB64B3656A8D5EE29F6 /* pattern_formatter-inl.h */,
+				55811696EFDAFF882C1364D6 /* pattern_formatter.h */,
+				3C930198CF20CB8A37F96FD8 /* sinks */,
+				B7367886AB35C1F83020D6C6 /* spdlog-inl.h */,
+				47388D660DC684D87BC8ABA6 /* spdlog.h */,
+				4189822EB5E3C72033C7506E /* stopwatch.h */,
+				CC36A3906E203F82654751D0 /* tweakme.h */,
+				25723C40C75BD832BE82EA80 /* version.h */,
+			);
+			name = spdlog;
+			sourceTree = "<group>";
+		};
+		F5E57E8517B12BB7546654C5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EA674E421C6098F4963FD482 /* spdlog */,
+			);
+			name = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,21 +401,14 @@
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			attributes = {
-			};
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Hazel" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
 			hasScannedForEncodings = 1;
-			knownRegions = (
-				en,
-				Base,
-			);
 			mainGroup = 9DD5D9D437F24E46842D9814 /* Hazel */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				707FD45C87926F8E77AE6A9C /* Hazel */,
+				707FD45C87926F8E77AE6A9C /* libHazel.dylib */,
 			);
 		};
 /* End PBXProject section */
@@ -139,23 +428,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B6E509E27F15D3E0077D8A3 /* Log.cpp in Sources */,
-				2B6E509427F09F040077D8A3 /* Application.cpp in Sources */,
+				EB8E4E4142F3C133F501DC81 /* Application.cpp in Sources */,
+				09D7FE5D3969CD4F14770C9D /* Log.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		025798E3526B2D95D4E95F23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
 				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
 				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = hzpch.h;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HZ_PLATFORM_MAC,
 					HZ_BUILD_DLL,
@@ -167,7 +462,14 @@
 				OBJROOT = "../bin-int/Debug-macosx-x86_64/Hazel";
 				ONLY_ACTIVE_ARCH = YES;
 				SYMROOT = "../bin/Debug-macosx-x86_64/Hazel";
-				USER_HEADER_SEARCH_PATHS = vendor/spdlog/include;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					vendor/spdlog/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					src,
+					vendor/spdlog/include,
+				);
 			};
 			name = Debug;
 		};
@@ -175,15 +477,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CONFIGURATION_BUILD_DIR = "../bin/Debug-macosx-x86_64/Hazel";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXECUTABLE_PREFIX = lib;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /usr/local/lib;
-				NEW_SETTING = "";
 				PRODUCT_NAME = Hazel;
-				SYSTEM_HEADER_SEARCH_PATHS = vendor/spdlog/include;
 			};
 			name = Debug;
 		};
@@ -191,15 +490,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CONFIGURATION_BUILD_DIR = "../bin/Dist-macosx-x86_64/Hazel";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXECUTABLE_PREFIX = lib;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /usr/local/lib;
-				NEW_SETTING = "";
 				PRODUCT_NAME = Hazel;
-				SYSTEM_HEADER_SEARCH_PATHS = vendor/spdlog/include;
 			};
 			name = Dist;
 		};
@@ -207,15 +503,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CONFIGURATION_BUILD_DIR = "../bin/Release-macosx-x86_64/Hazel";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EXECUTABLE_PREFIX = lib;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /usr/local/lib;
-				NEW_SETTING = "";
 				PRODUCT_NAME = Hazel;
-				SYSTEM_HEADER_SEARCH_PATHS = vendor/spdlog/include;
 			};
 			name = Release;
 		};
@@ -223,9 +516,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
 				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
 				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = hzpch.h;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HZ_PLATFORM_MAC,
 					HZ_BUILD_DLL,
@@ -237,7 +533,14 @@
 				OBJROOT = "../bin-int/Release-macosx-x86_64/Hazel";
 				ONLY_ACTIVE_ARCH = NO;
 				SYMROOT = "../bin/Release-macosx-x86_64/Hazel";
-				USER_HEADER_SEARCH_PATHS = vendor/spdlog/include;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					vendor/spdlog/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					src,
+					vendor/spdlog/include,
+				);
 			};
 			name = Release;
 		};
@@ -245,9 +548,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
 				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
 				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = hzpch.h;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					HZ_PLATFORM_MAC,
 					HZ_BUILD_DLL,
@@ -259,7 +565,14 @@
 				OBJROOT = "../bin-int/Dist-macosx-x86_64/Hazel";
 				ONLY_ACTIVE_ARCH = NO;
 				SYMROOT = "../bin/Dist-macosx-x86_64/Hazel";
-				USER_HEADER_SEARCH_PATHS = vendor/spdlog/include;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					vendor/spdlog/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					src,
+					vendor/spdlog/include,
+				);
 			};
 			name = Dist;
 		};
@@ -276,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		FD239E056EAEB6771DAFDC45 /* Build configuration list for PBXNativeTarget "Hazel" */ = {
+		FD239E056EAEB6771DAFDC45 /* Build configuration list for PBXNativeTarget "libHazel.dylib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				461FE24BA16135BD74BB808B /* Debug */,
@@ -287,6 +600,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-	};
-	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
 }

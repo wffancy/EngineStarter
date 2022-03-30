@@ -5,6 +5,8 @@
 //  Created by wufanfan on 2022/3/28.
 //
 
+#include "hzpch.h"
+
 #include "Log.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 

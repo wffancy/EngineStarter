@@ -18,17 +18,22 @@ project "Hazel"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "hzpch.h"
+
     files
     {
+        "%{prj.name}/**.h",
         "%{prj.name}/src/**.h",
         "%{prj.name}/src/**.cpp"
     }
 
     includedirs
     {
-        "%{prj.name}/src"
+        "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include"
     }
+
+    sysincludedirs { "%{prj.name}/vendor/spdlog/include" }
 
     filter "system:macosx"
         staticruntime "On"
@@ -73,9 +78,12 @@ project "Sandbox"
 
     includedirs
     {
+        "Hazel",
+        "Hazel/src",
         "Hazel/vendor/spdlog/include",
-        "Hazel/src"
     }
+
+    sysincludedirs { "Hazel/vendor/spdlog/include" }
 
     links
     {

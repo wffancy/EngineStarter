@@ -10,8 +10,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Hazel {
 
 class KeyEvent : public Event

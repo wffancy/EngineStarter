@@ -10,9 +10,6 @@
 
 #include "Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Hazel {
 
 // 枚举类与枚举的不同
