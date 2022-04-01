@@ -18,7 +18,7 @@ project "Hazel"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-    pchheader "hzpch.h"
+    pchheader "src/hzpch.h"
 
     files
     {
@@ -30,7 +30,18 @@ project "Hazel"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{prj.name}/vendor/GLFW/include"
+    }
+
+    libdirs { "%{prj.name}/vendor/GLFW/lib" }
+
+    links 
+    { 
+        "glfw3",
+        "OpenGL.framework",
+        "Cocoa.framework",
+        "IOKit.framework",
     }
 
     sysincludedirs { "%{prj.name}/vendor/spdlog/include" }
@@ -42,7 +53,8 @@ project "Hazel"
         defines
         {
             "HZ_PLATFORM_MAC",
-            "HZ_BUILD_DLL"
+            "HZ_BUILD_DLL",
+            "HZ_ENABLE_ASSERTS"
         }
 
         postbuildcommands
@@ -87,7 +99,7 @@ project "Sandbox"
 
     links
     {
-        "Hazel"
+        "Hazel",
     }
 
     filter "system:macosx"

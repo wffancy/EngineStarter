@@ -8,7 +8,7 @@
 #ifndef Event_h
 #define Event_h
 
-#include "Core.h"
+#include "Hazel/Core.h"
 
 namespace Hazel {
 
