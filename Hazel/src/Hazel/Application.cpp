@@ -10,7 +10,7 @@
 #include "Platform/macOS/macWindow.h"
 #include "Window.h"
 
-#include "GLFW/glfw3.h"
+#include "Glad/glad.h"
 
 namespace Hazel {
 
@@ -27,21 +27,41 @@ namespace Hazel {
     
     }
 
+    void Application::Run()
+    {
+        while(m_Running)
+        {
+            glClearColor(1, 0, 0, 1);
+            glClear(GL_COLOR_BUFFER_BIT);
+            
+            for (Layer* layer: m_LayerStack)
+                layer->OnUpdate();
+            
+            m_Window->OnUpdate();
+        }
+    }
+
+    void Application::PushLayer(Layer *layer)
+    {
+        m_LayerStack.PushLayer(layer);
+    }
+
+    void Application::PushOverlay(Layer *layer)
+    {
+        m_LayerStack.PushOverlay(layer);
+    }
+
     void Application::OnEvent(Event &e)
     {
         EventDispatcher disptacher(e);
         disptacher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnCloseEvent));
         
         HZ_CORE_INFO("{0}", e)
-    }
-
-    void Application::Run()
-    {
-        while(m_Running)
+        
+        for (auto it = m_LayerStack.end(); it != m_LayerStack.begin(); )
         {
-            glClearColor(0, 0, 0, 1);
-            glClear(GL_COLOR_BUFFER_BIT);
-            m_Window->OnUpdate();
+            (*--it)->OnEvent(e);
+            if (e.Handled) break;
         }
     }
 

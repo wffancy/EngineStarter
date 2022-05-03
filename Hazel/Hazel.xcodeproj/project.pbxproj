@@ -7,20 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BC8C8CF27F70F5200356AE6 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC8C8CE27F70F5200356AE6 /* libglfw3.a */; };
-		2BC8C8D127F70F8E00356AE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC8C8D027F70F8E00356AE6 /* Cocoa.framework */; };
-		2BC8C8D327F7198100356AE6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC8C8D227F7198100356AE6 /* IOKit.framework */; };
 		4716C42040D880927AD78260 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EC434E89735191ADBD3EB28 /* Log.cpp */; };
+		59A7F3D69DF69948E01DD216 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994D303EBB18DD70F7CE067E /* Layer.cpp */; };
+		6E823802106BD3F40792E642 /* LayerStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C1E8AA76E53C5CFDF38EEA /* LayerStack.cpp */; };
+		713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BACC980CF188B320DBC2FC0 /* IOKit.framework */; };
 		840EA602F136B474F2C9A442 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19352E0A6698243CDCB7244A /* OpenGL.framework */; };
+		B9CA2C199F61334B62A64259 /* libGlad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B187CD810B88E473D2CFDBC1 /* libGlad.a */; };
 		E4FE762158E6EDD37B349C61 /* macWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B881E09E216157B50183C49 /* macWindow.cpp */; };
 		F0B21484B37274F610A752C4 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1F5F50CA63CFD3E2A2A2B4C /* Application.cpp */; };
+		F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01D9077A27FF372C8F062DBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1197FB54F5DF038679CC3194 /* vendor/Glad/Glad.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3E398A4741AA5C79C3170087;
+			remoteInfo = libGlad.a;
+		};
+		54137A137A39A9C5E140A053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1197FB54F5DF038679CC3194 /* vendor/Glad/Glad.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B45B54D49EC093FA32D638D;
+			remoteInfo = libGlad.a;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05949433CC228BA53A24B273 /* argv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = argv.h; path = vendor/spdlog/include/spdlog/cfg/argv.h; sourceTree = "<group>"; };
 		0B1FBCB96520D3AB2C67CAF9 /* helpers-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "helpers-inl.h"; path = "vendor/spdlog/include/spdlog/cfg/helpers-inl.h"; sourceTree = "<group>"; };
 		0B7DFD34D20BF4A6400E1B74 /* logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = logger.h; path = vendor/spdlog/include/spdlog/logger.h; sourceTree = "<group>"; };
+		0BACC980CF188B320DBC2FC0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		0C367FD63D1A77C85032AE16 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Event.h; path = src/Hazel/Events/Event.h; sourceTree = "<group>"; };
+		1197FB54F5DF038679CC3194 /* libGlad.a */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Glad.xcodeproj"; path = vendor/Glad/Glad.xcodeproj; sourceTree = SOURCE_ROOT; };
 		1389A32D0788EC9F8C74016D /* os-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "os-inl.h"; path = "vendor/spdlog/include/spdlog/details/os-inl.h"; sourceTree = "<group>"; };
 		1417D9D6B60175C8AD288816 /* xchar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xchar.h; path = vendor/spdlog/include/spdlog/fmt/xchar.h; sourceTree = "<group>"; };
 		144597F7ACBD8569D8A47637 /* daily_file_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = daily_file_sink.h; path = vendor/spdlog/include/spdlog/sinks/daily_file_sink.h; sourceTree = "<group>"; };
@@ -35,9 +56,6 @@
 		25723C40C75BD832BE82EA80 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = vendor/spdlog/include/spdlog/version.h; sourceTree = "<group>"; };
 		25723E3B31FCF0ADACE1BC7B /* dist_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dist_sink.h; path = vendor/spdlog/include/spdlog/sinks/dist_sink.h; sourceTree = "<group>"; };
 		2A35B8391B2D262B8730A679 /* log_msg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = log_msg.h; path = vendor/spdlog/include/spdlog/details/log_msg.h; sourceTree = "<group>"; };
-		2BC8C8CE27F70F5200356AE6 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "../../../../Downloads/Chrome Downloads/glfw-3.3.6.bin.MACOS/lib-x86_64/libglfw3.a"; sourceTree = "<group>"; };
-		2BC8C8D027F70F8E00356AE6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		2BC8C8D227F7198100356AE6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		2C3BEAF51D3358E78936D935 /* sink-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "sink-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/sink-inl.h"; sourceTree = "<group>"; };
 		2CC29F05842811F736362D45 /* env.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = env.h; path = vendor/spdlog/include/spdlog/cfg/env.h; sourceTree = "<group>"; };
 		2DE5F2E921E53C5BA6D05129 /* core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = core.h; path = vendor/spdlog/include/spdlog/fmt/bundled/core.h; sourceTree = "<group>"; };
@@ -45,7 +63,7 @@
 		35C1E1524CD47C843CF07792 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Log.h; path = src/Hazel/Log.h; sourceTree = "<group>"; };
 		371E96F3911FADE55866A533 /* mongo_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mongo_sink.h; path = vendor/spdlog/include/spdlog/sinks/mongo_sink.h; sourceTree = "<group>"; };
 		39EE880D93EF9EFF5B36964D /* ostream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ostream.h; path = vendor/spdlog/include/spdlog/fmt/bundled/ostream.h; sourceTree = "<group>"; };
-		3AB78B36341D8CA827B8E976 /* libHazel.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libHazel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB78B36341D8CA827B8E976 /* libHazel.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libHazel.dylib; path = libHazel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		411C158952D3557BC84143C9 /* ostream_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ostream_sink.h; path = vendor/spdlog/include/spdlog/sinks/ostream_sink.h; sourceTree = "<group>"; };
 		4189822EB5E3C72033C7506E /* stopwatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stopwatch.h; path = vendor/spdlog/include/spdlog/stopwatch.h; sourceTree = "<group>"; };
 		42005F15DA784C87065F3D55 /* basic_file_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = basic_file_sink.h; path = vendor/spdlog/include/spdlog/sinks/basic_file_sink.h; sourceTree = "<group>"; };
@@ -69,6 +87,7 @@
 		65A865FFFBD177F1BD37D43F /* stdout_sinks-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdout_sinks-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/stdout_sinks-inl.h"; sourceTree = "<group>"; };
 		678F5A672EF41559B9ABE8A7 /* ansicolor_sink-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ansicolor_sink-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/ansicolor_sink-inl.h"; sourceTree = "<group>"; };
 		685572E79BD4B259B3CE9127 /* udp_client-windows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "udp_client-windows.h"; path = "vendor/spdlog/include/spdlog/details/udp_client-windows.h"; sourceTree = "<group>"; };
+		6DEC4B5388B8BA058C895193 /* khrplatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = khrplatform.h; path = vendor/Glad/include/KHR/khrplatform.h; sourceTree = "<group>"; };
 		6F2F72D4632EBC46E819D114 /* logger-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "logger-inl.h"; path = "vendor/spdlog/include/spdlog/logger-inl.h"; sourceTree = "<group>"; };
 		727079C8B6BF1F3AF8E65808 /* KeyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KeyEvent.h; path = src/Hazel/Events/KeyEvent.h; sourceTree = "<group>"; };
 		756BDBAD85B8BF9F83A589ED /* synchronous_factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = synchronous_factory.h; path = vendor/spdlog/include/spdlog/details/synchronous_factory.h; sourceTree = "<group>"; };
@@ -87,10 +106,12 @@
 		8CCF05B551845C2705F303F5 /* win_eventlog_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = win_eventlog_sink.h; path = vendor/spdlog/include/spdlog/sinks/win_eventlog_sink.h; sourceTree = "<group>"; };
 		8D3B622B2364741DE4CAD06B /* thread_pool-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "thread_pool-inl.h"; path = "vendor/spdlog/include/spdlog/details/thread_pool-inl.h"; sourceTree = "<group>"; };
 		8D6674761FF43E6888CCE2B6 /* fwd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = vendor/spdlog/include/spdlog/fwd.h; sourceTree = "<group>"; };
+		8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		90A421E5A25B61D717C95025 /* systemd_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = systemd_sink.h; path = vendor/spdlog/include/spdlog/sinks/systemd_sink.h; sourceTree = "<group>"; };
 		931370C7293C82B9EAA2DF07 /* file_helper-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "file_helper-inl.h"; path = "vendor/spdlog/include/spdlog/details/file_helper-inl.h"; sourceTree = "<group>"; };
 		9535657E8934AEF00E1FC3BE /* ApplicationEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ApplicationEvent.h; path = src/Hazel/Events/ApplicationEvent.h; sourceTree = "<group>"; };
 		97010659A8B8464B1E263499 /* log_msg-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "log_msg-inl.h"; path = "vendor/spdlog/include/spdlog/details/log_msg-inl.h"; sourceTree = "<group>"; };
+		994D303EBB18DD70F7CE067E /* Layer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Layer.cpp; path = src/Hazel/Layer.cpp; sourceTree = "<group>"; };
 		99B8986D785B33DF2D3D36AD /* backtracer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = backtracer.h; path = vendor/spdlog/include/spdlog/details/backtracer.h; sourceTree = "<group>"; };
 		9AA9C57BF730C9ED7FD383BB /* registry-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "registry-inl.h"; path = "vendor/spdlog/include/spdlog/details/registry-inl.h"; sourceTree = "<group>"; };
 		9AFD6D19AB4A510BA9371B59 /* periodic_worker-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "periodic_worker-inl.h"; path = "vendor/spdlog/include/spdlog/details/periodic_worker-inl.h"; sourceTree = "<group>"; };
@@ -100,12 +121,15 @@
 		A47BAEA83709789A9FE21CE8 /* glfw3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = glfw3.h; path = vendor/GLFW/include/GLFW/glfw3.h; sourceTree = "<group>"; };
 		A743E986D93D3438531C6FC6 /* EntryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EntryPoint.h; path = src/Hazel/EntryPoint.h; sourceTree = "<group>"; };
 		A7924A361BEC8F2899D01876 /* glfw3native.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = glfw3native.h; path = vendor/GLFW/include/GLFW/glfw3native.h; sourceTree = "<group>"; };
+		A8C1E8AA76E53C5CFDF38EEA /* LayerStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LayerStack.cpp; path = src/Hazel/LayerStack.cpp; sourceTree = "<group>"; };
 		A91F3EC69D1E883822099D06 /* common-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "common-inl.h"; path = "vendor/spdlog/include/spdlog/common-inl.h"; sourceTree = "<group>"; };
 		AB31817ED36C3A30BB07C7BE /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Window.h; path = src/Hazel/Window.h; sourceTree = "<group>"; };
 		AC12D46F448AC1E17071B2AF /* dup_filter_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dup_filter_sink.h; path = vendor/spdlog/include/spdlog/sinks/dup_filter_sink.h; sourceTree = "<group>"; };
+		AC4CEEC2F09B943432C2CD02 /* glad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = glad.h; path = vendor/Glad/include/glad/glad.h; sourceTree = "<group>"; };
 		B11E78FC2578BDEEA35C473C /* compile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = compile.h; path = vendor/spdlog/include/spdlog/fmt/compile.h; sourceTree = "<group>"; };
 		B13AC5BB245C52AD852193FB /* stdout_color_sinks-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdout_color_sinks-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h"; sourceTree = "<group>"; };
 		B3A9F5291030F99B98D3B369 /* base_sink-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "base_sink-inl.h"; path = "vendor/spdlog/include/spdlog/sinks/base_sink-inl.h"; sourceTree = "<group>"; };
+		B41451A8FC8535DA412407E8 /* Layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Layer.h; path = src/Hazel/Layer.h; sourceTree = "<group>"; };
 		B7367886AB35C1F83020D6C6 /* spdlog-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "spdlog-inl.h"; path = "vendor/spdlog/include/spdlog/spdlog-inl.h"; sourceTree = "<group>"; };
 		B786CCAD140DD11F9CB08AED /* wincolor_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wincolor_sink.h; path = vendor/spdlog/include/spdlog/sinks/wincolor_sink.h; sourceTree = "<group>"; };
 		B819B8A9121ACF9BD961C6E9 /* compile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = compile.h; path = vendor/spdlog/include/spdlog/fmt/bundled/compile.h; sourceTree = "<group>"; };
@@ -137,6 +161,7 @@
 		ED292BDBF9B3DE4D7498AA1B /* registry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = registry.h; path = vendor/spdlog/include/spdlog/details/registry.h; sourceTree = "<group>"; };
 		F164A3C5FDEF563778D42205 /* msvc_sink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = msvc_sink.h; path = vendor/spdlog/include/spdlog/sinks/msvc_sink.h; sourceTree = "<group>"; };
 		F22CE8D5E32456C74F27D715 /* color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = color.h; path = vendor/spdlog/include/spdlog/fmt/bundled/color.h; sourceTree = "<group>"; };
+		F333CCB4252D17669F0C52F4 /* LayerStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LayerStack.h; path = src/Hazel/LayerStack.h; sourceTree = "<group>"; };
 		FA6BC459DEB2CC8B629FFA99 /* includes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = includes.h; path = vendor/spdlog/tests/includes.h; sourceTree = "<group>"; };
 		FB081E3A2D0168ECA6E0A47A /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = utils.h; path = vendor/spdlog/bench/utils.h; sourceTree = "<group>"; };
 		FB0C25290796D79B827BA369 /* chrono.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = chrono.h; path = vendor/spdlog/include/spdlog/fmt/bundled/chrono.h; sourceTree = "<group>"; };
@@ -149,10 +174,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BC8C8CF27F70F5200356AE6 /* libglfw3.a in Frameworks */,
 				840EA602F136B474F2C9A442 /* OpenGL.framework in Frameworks */,
-				2BC8C8D127F70F8E00356AE6 /* Cocoa.framework in Frameworks */,
-				2BC8C8D327F7198100356AE6 /* IOKit.framework in Frameworks */,
+				F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */,
+				713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */,
+				B9CA2C199F61334B62A64259 /* libGlad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				289C128557426677B083C0C5 /* GLFW */,
+				47AF4CD57655A0C7CF96FB15 /* Glad */,
 				3F26F4573FD9F149B3BBC297 /* spdlog */,
 			);
 			name = vendor;
@@ -205,6 +231,14 @@
 				96DA378CBF14F03EA6B07DCC /* include */,
 			);
 			name = GLFW;
+			sourceTree = "<group>";
+		};
+		28CDA009510858BB38A3E649 /* KHR */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC4B5388B8BA058C895193 /* khrplatform.h */,
+			);
+			name = KHR;
 			sourceTree = "<group>";
 		};
 		3C930198CF20CB8A37F96FD8 /* sinks */ = {
@@ -256,6 +290,23 @@
 			name = spdlog;
 			sourceTree = "<group>";
 		};
+		47617F346F9C37E65737C574 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				28CDA009510858BB38A3E649 /* KHR */,
+				E379016F0544AEA141F9D7AF /* glad */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		47AF4CD57655A0C7CF96FB15 /* Glad */ = {
+			isa = PBXGroup;
+			children = (
+				47617F346F9C37E65737C574 /* include */,
+			);
+			name = Glad;
+			sourceTree = "<group>";
+		};
 		4929B6C3919A9AF5D6396D03 /* tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,8 +321,8 @@
 			isa = PBXGroup;
 			children = (
 				E15F4D4785B1EAF997EA3387 /* Hazel */,
-				A19930C9B8ABCBFBA8C7C709 /* Platform */,
 				77A9E7F31A980EA5A9BDEE33 /* Hazel.h */,
+				A19930C9B8ABCBFBA8C7C709 /* Platform */,
 				317B27E5D4694E97638F2E25 /* hzpch.h */,
 			);
 			name = src;
@@ -342,6 +393,14 @@
 			name = include;
 			sourceTree = "<group>";
 		};
+		9D968EAA920D05DCE0E0A4EA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				1197FB54F5DF038679CC3194 /* Glad.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
 		9DD5D9D437F24E46842D9814 /* Hazel */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +408,7 @@
 				1DF602E4C1418C16DC125924 /* vendor */,
 				BBF76781A7E87333FA200DC1 /* Frameworks */,
 				A6C936B49B3FADE6EA134CF4 /* Products */,
+				9D968EAA920D05DCE0E0A4EA /* Projects */,
 			);
 			name = Hazel;
 			sourceTree = "<group>";
@@ -372,12 +432,19 @@
 		BBF76781A7E87333FA200DC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2BC8C8D227F7198100356AE6 /* IOKit.framework */,
-				2BC8C8D027F70F8E00356AE6 /* Cocoa.framework */,
-				2BC8C8CE27F70F5200356AE6 /* libglfw3.a */,
 				19352E0A6698243CDCB7244A /* OpenGL.framework */,
+				8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */,
+				0BACC980CF188B320DBC2FC0 /* IOKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7488D7AC0AE8EECB449EBBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B187CD810B88E473D2CFDBC1 /* libGlad.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D72C1328484EB41AFE156168 /* cfg */ = {
@@ -394,16 +461,28 @@
 		E15F4D4785B1EAF997EA3387 /* Hazel */ = {
 			isa = PBXGroup;
 			children = (
-				0FBC674C35E296FE9CE98D8C /* Events */,
 				C1F5F50CA63CFD3E2A2A2B4C /* Application.cpp */,
-				4EC434E89735191ADBD3EB28 /* Log.cpp */,
 				5A42A8F6EFB968285E55BF36 /* Application.h */,
 				1AE723E0410D5392A8144A20 /* Core.h */,
 				A743E986D93D3438531C6FC6 /* EntryPoint.h */,
+				0FBC674C35E296FE9CE98D8C /* Events */,
+				994D303EBB18DD70F7CE067E /* Layer.cpp */,
+				B41451A8FC8535DA412407E8 /* Layer.h */,
+				A8C1E8AA76E53C5CFDF38EEA /* LayerStack.cpp */,
+				F333CCB4252D17669F0C52F4 /* LayerStack.h */,
+				4EC434E89735191ADBD3EB28 /* Log.cpp */,
 				35C1E1524CD47C843CF07792 /* Log.h */,
 				AB31817ED36C3A30BB07C7BE /* Window.h */,
 			);
 			name = Hazel;
+			sourceTree = "<group>";
+		};
+		E379016F0544AEA141F9D7AF /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				AC4CEEC2F09B943432C2CD02 /* glad.h */,
+			);
+			name = glad;
 			sourceTree = "<group>";
 		};
 		E68C9619D178BC0B195E8459 /* macOS */ = {
@@ -473,6 +552,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B500CA83AE66CBF5A20228C3 /* PBXTargetDependency */,
 			);
 			name = Hazel;
 			productName = Hazel;
@@ -484,24 +564,33 @@
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			attributes = {
-			};
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Hazel" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
 			hasScannedForEncodings = 1;
-			knownRegions = (
-				en,
-				Base,
-			);
 			mainGroup = 9DD5D9D437F24E46842D9814 /* Hazel */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C7488D7AC0AE8EECB449EBBA /* Products */;
+					ProjectRef = 1197FB54F5DF038679CC3194 /* Glad.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				707FD45C87926F8E77AE6A9C /* Hazel */,
+				707FD45C87926F8E77AE6A9C /* libHazel.dylib */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B187CD810B88E473D2CFDBC1 /* libGlad.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGlad.a;
+			remoteRef = 01D9077A27FF372C8F062DBA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7ECFD646F05AEEB89F5C1486 /* Resources */ = {
@@ -519,12 +608,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0B21484B37274F610A752C4 /* Application.cpp in Sources */,
+				59A7F3D69DF69948E01DD216 /* Layer.cpp in Sources */,
+				6E823802106BD3F40792E642 /* LayerStack.cpp in Sources */,
 				4716C42040D880927AD78260 /* Log.cpp in Sources */,
 				E4FE762158E6EDD37B349C61 /* macWindow.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B500CA83AE66CBF5A20228C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libGlad.a;
+			targetProxy = 54137A137A39A9C5E140A053 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		025798E3526B2D95D4E95F23 /* Debug */ = {
@@ -543,18 +645,31 @@
 					HZ_PLATFORM_MAC,
 					HZ_BUILD_DLL,
 					HZ_ENABLE_ASSERTS,
+					GLFW_INCLUDE_NONE,
 					HZ_DEBUG,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = vendor/GLFW/lib;
+				LIBRARY_SEARCH_PATHS = (
+					vendor/GLFW/lib,
+				);
 				OBJROOT = "../bin-int/Debug-macosx-x86_64/Hazel";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-lglfw3";
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+				);
 				SYMROOT = "../bin/Debug-macosx-x86_64/Hazel";
-				SYSTEM_HEADER_SEARCH_PATHS = "vendor/spdlog/include $(inherited)";
-				USER_HEADER_SEARCH_PATHS = "src vendor/spdlog/include vendor/GLFW/include";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					vendor/spdlog/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					src,
+					vendor/spdlog/include,
+					vendor/GLFW/include,
+					vendor/Glad/include,
+				);
 			};
 			name = Debug;
 		};
@@ -611,18 +726,31 @@
 					HZ_PLATFORM_MAC,
 					HZ_BUILD_DLL,
 					HZ_ENABLE_ASSERTS,
+					GLFW_INCLUDE_NONE,
 					HZ_RELEASE,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = vendor/GLFW/lib;
+				LIBRARY_SEARCH_PATHS = (
+					vendor/GLFW/lib,
+				);
 				OBJROOT = "../bin-int/Release-macosx-x86_64/Hazel";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-lglfw3";
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+				);
 				SYMROOT = "../bin/Release-macosx-x86_64/Hazel";
-				SYSTEM_HEADER_SEARCH_PATHS = "vendor/spdlog/include $(inherited)";
-				USER_HEADER_SEARCH_PATHS = "src vendor/spdlog/include vendor/GLFW/include";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					vendor/spdlog/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					src,
+					vendor/spdlog/include,
+					vendor/GLFW/include,
+					vendor/Glad/include,
+				);
 			};
 			name = Release;
 		};
@@ -640,18 +768,31 @@
 					HZ_PLATFORM_MAC,
 					HZ_BUILD_DLL,
 					HZ_ENABLE_ASSERTS,
+					GLFW_INCLUDE_NONE,
 					HZ_DIST,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = vendor/GLFW/lib;
+				LIBRARY_SEARCH_PATHS = (
+					vendor/GLFW/lib,
+				);
 				OBJROOT = "../bin-int/Dist-macosx-x86_64/Hazel";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-lglfw3";
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+				);
 				SYMROOT = "../bin/Dist-macosx-x86_64/Hazel";
-				SYSTEM_HEADER_SEARCH_PATHS = "vendor/spdlog/include $(inherited)";
-				USER_HEADER_SEARCH_PATHS = "src vendor/spdlog/include vendor/GLFW/include";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					vendor/spdlog/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					src,
+					vendor/spdlog/include,
+					vendor/GLFW/include,
+					vendor/Glad/include,
+				);
 			};
 			name = Dist;
 		};
@@ -668,7 +809,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		FD239E056EAEB6771DAFDC45 /* Build configuration list for PBXNativeTarget "Hazel" */ = {
+		FD239E056EAEB6771DAFDC45 /* Build configuration list for PBXNativeTarget "libHazel.dylib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				461FE24BA16135BD74BB808B /* Debug */,
@@ -679,6 +820,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-	};
-	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
 }

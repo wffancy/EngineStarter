@@ -10,6 +10,12 @@ workspace "EngineStarter"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
+
+include "Hazel/vendor/Glad"
+
 project "Hazel"
     location "Hazel"
     kind "SharedLib"
@@ -31,7 +37,8 @@ project "Hazel"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{prj.name}/vendor/GLFW/include"
+        "%{prj.name}/vendor/GLFW/include",
+        "%{prj.name}/vendor/Glad/include"
     }
 
     libdirs { "%{prj.name}/vendor/GLFW/lib" }
@@ -42,6 +49,7 @@ project "Hazel"
         "OpenGL.framework",
         "Cocoa.framework",
         "IOKit.framework",
+        "Glad"
     }
 
     sysincludedirs { "%{prj.name}/vendor/spdlog/include" }
@@ -54,7 +62,8 @@ project "Hazel"
         {
             "HZ_PLATFORM_MAC",
             "HZ_BUILD_DLL",
-            "HZ_ENABLE_ASSERTS"
+            "HZ_ENABLE_ASSERTS",
+            "GLFW_INCLUDE_NONE"
         }
 
         postbuildcommands

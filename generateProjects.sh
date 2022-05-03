@@ -1,1 +1,1 @@
-ThirdParty/premake5 xcode4
+vendor/premake5 xcode4
