@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
+IncludeDir["ImGui"] = "Hazel/vendor/imgui"
 
 include "Hazel/vendor/Glad"
+include "Hazel/vendor/imgui"
 
 project "Hazel"
     location "Hazel"
@@ -38,7 +40,8 @@ project "Hazel"
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
         "%{prj.name}/vendor/GLFW/include",
-        "%{prj.name}/vendor/Glad/include"
+        "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}"
     }
 
     libdirs { "%{prj.name}/vendor/GLFW/lib" }
@@ -49,7 +52,8 @@ project "Hazel"
         "OpenGL.framework",
         "Cocoa.framework",
         "IOKit.framework",
-        "Glad"
+        "Glad",
+        "ImGui"
     }
 
     sysincludedirs { "%{prj.name}/vendor/spdlog/include" }

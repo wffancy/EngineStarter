@@ -17,8 +17,6 @@ project "Glad"
         "include"
     }
 
-    sysincludedirs { "%{prj.name}/vendor/spdlog/include" }
-
     filter "system:macosx"
         staticruntime "On"
         cppdialect "C++17"

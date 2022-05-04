@@ -52,7 +52,11 @@ void MacWindow::Init(const WindowProps &props)
         int success = glfwInit();
         HZ_CORE_ASSERT(success, "Could not intialize GLFW!")
         glfwSetErrorCallback(GLFWErrorCallback);
-            
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
+        glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+        
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
         s_GLFWInitialized = true;
     }
     
@@ -105,6 +109,14 @@ void MacWindow::Init(const WindowProps &props)
                 break;
             }
         }
+    });
+    
+    glfwSetCharCallback(m_Window, [](GLFWwindow* window, unsigned int keycode)
+    {
+        WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+        
+        KeyTypedEvent event(keycode);
+        data.EventCallback(event);
     });
     
     glfwSetMouseButtonCallback(m_Window, [](GLFWwindow* window, int button, int action, int mods)

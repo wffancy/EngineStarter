@@ -155,10 +155,6 @@
 				OBJROOT = "bin-int/Dist-macosx-x86_64/Glad";
 				ONLY_ACTIVE_ARCH = NO;
 				SYMROOT = "bin/Dist-macosx-x86_64/Glad";
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					Glad/vendor/spdlog/include,
-					"$(inherited)",
-				);
 				USER_HEADER_SEARCH_PATHS = (
 					include,
 				);
@@ -179,10 +175,6 @@
 				OBJROOT = "bin-int/Debug-macosx-x86_64/Glad";
 				ONLY_ACTIVE_ARCH = NO;
 				SYMROOT = "bin/Debug-macosx-x86_64/Glad";
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					Glad/vendor/spdlog/include,
-					"$(inherited)",
-				);
 				USER_HEADER_SEARCH_PATHS = (
 					include,
 				);
@@ -215,10 +207,6 @@
 				OBJROOT = "bin-int/Release-macosx-x86_64/Glad";
 				ONLY_ACTIVE_ARCH = NO;
 				SYMROOT = "bin/Release-macosx-x86_64/Glad";
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					Glad/vendor/spdlog/include,
-					"$(inherited)",
-				);
 				USER_HEADER_SEARCH_PATHS = (
 					include,
 				);

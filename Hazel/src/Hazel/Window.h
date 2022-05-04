@@ -12,6 +12,7 @@
 
 #include "Core.h"
 #include "Events/Event.h"
+#include "ImGui/ImGuiLayer.h"
 
 namespace Hazel {
 

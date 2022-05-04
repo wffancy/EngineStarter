@@ -8,6 +8,9 @@
 		location = "group:Hazel/Hazel.xcodeproj">
 	</FileRef>
 	<FileRef
+		location = "group:Hazel/vendor/imgui/ImGui.xcodeproj">
+	</FileRef>
+	<FileRef
 		location = "group:Sandbox/Sandbox.xcodeproj">
 	</FileRef>
 </Workspace>
